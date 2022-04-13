@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head.ejs") %> 
+    <body class="food-ejs">
+        <h1>At food bar</h1>
+        <h2><%= foodItem.name %>, $<%= foodItem.price %>  </h2>
+        <div class="img-container"> 
+            <img src="<%= foodItem.image %> " alt="<%= foodItem.name %>">
+        </div>
+    </body>
+</html>

@@ -10,6 +10,7 @@ const PORT = process.env.PORT;
 // Database
 //////////////////////
 const drinks = require("./models/drinks");
+const food = require("./models/food");
 capitalize(drinks);
 /////////////////////
 // Declare Middleware
@@ -27,13 +28,17 @@ app.get("/", (req, res) =>{
 
 
 //index
-app.get("/drinks", (req, res) =>{
-    res.render("drinks_index.ejs",{drinks: drinks});
+app.get("/menu", (req, res) =>{
+    res.render("menu_index.ejs",{drinks: drinks, food: food});
 });
 
 //show
-app.get("/drinks/:id", (req, res) =>{
+app.get("/menu/drinks/:id", (req, res) =>{
     res.render("drinks_show.ejs", {drink:drinks[req.params.id]})
+})
+
+app.get("/menu/food/:id", (req, res) =>{
+    res.render("food_show.ejs", {foodItem: food[req.params.id]})
 })
 
 

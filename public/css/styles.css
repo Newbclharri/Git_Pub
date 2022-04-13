@@ -18,11 +18,18 @@ body h1, h2 {
     height:fit-content; */
 }
 
-main{
-    /* margin-left: 50vh; */
+.sub-head{
+    border: 1px solid blanchedalmond;
+    border-radius: 70px;
+    width: 15%;
+    padding: 15px;
+}
+.index-ejs ul{
+    display: table;
+    font-size: 30px;
 }
 
-.show-ejs h1{
+.show-ejs h1, .food-ejs h1{
     text-decoration: underline;
 }
 
