@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head.ejs") %> 
+    <body>
+        <h1>Welcome to gitPub</h1>
+        <main>
+            <ul>
+                <% for(let i = 0; i < drinks.length; i++){ %>
+                    <li><%= drinks[i].name %> </li>
+               <% } %> 
+            </ul>
+        </main>
+    </body>
+</html>

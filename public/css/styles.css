@@ -1,0 +1,18 @@
+*{
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+}
+
+body{
+    color: blanchedalmond;
+    background-color: steelblue;
+}
+
+body h1{
+    text-align: center;
+}
+
+main{
+    margin-left: 50vh;
+}
