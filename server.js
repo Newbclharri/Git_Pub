@@ -22,7 +22,7 @@ app.use("/static",express.static("public"));
 
 //root
 app.get("/", (req, res) =>{
-    res.send("Welcome to the Gitpub App!")
+    res.send("Welcome to the Gitpub App!");
 });
 
 
@@ -31,8 +31,9 @@ app.get("/drinks", (req, res) =>{
     res.render("drinks_index.ejs",{drinks: drinks});
 });
 
+//show
 app.get("/drinks/:id", (req, res) =>{
-    res.send(req.params.id)
+    res.render("drinks_show.ejs", {drink:drinks[req.params.id]})
 })
 
 
