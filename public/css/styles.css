@@ -19,6 +19,7 @@ body{
 }
 
 body h1, h2 {
+    color:aqua;
     text-align: center;
     font-size: 40px;
     text-shadow: -10px 10px black;
@@ -51,7 +52,7 @@ body h1, h2 {
 
 .img-container {
     margin: auto;
-    width: 50%;
+    width: fit-content;
     font-size: 40px;
     text-align: center;
     text-shadow: -5px 5px black;
@@ -59,17 +60,22 @@ body h1, h2 {
 
 .zoom{
     
-    transition: transform .8s;
+    transition: transform .5s;
 }
 
 .menu-links:hover{
     color:aquamarine
 }
 
+.title:hover{
+    color:pink;
+}
+
 .zoom:hover{
     -ms-transform: scale(var(--scale)); /* IE 9 */
     -webkit-transform: scale(var(--scale)); /* Safari 3-8 */
     transform: scale(var(--scale)); 
+    text-shadow: none;
 }
 
 img{
