@@ -2,6 +2,8 @@
 // Setup - Import deps and create app object
 ////////////////////////
 require("dotenv").config();
+
+const morgan = require("morgan");
 const express = require("express");
 const app = express();
 const PORT = process.env.PORT;
@@ -16,6 +18,7 @@ capitalize(drinks);
 // Declare Middleware
 //////////////////////
 app.use("/static",express.static("public"));
+app.use(morgan("tiny"));
 
 ///////////////////////
 // Declare Routes and Routers 

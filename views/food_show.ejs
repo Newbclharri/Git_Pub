@@ -2,9 +2,9 @@
 <html lang="en">
     <%- include("partials/head.ejs") %> 
     <body class="food-ejs">
-        <h1>At food bar</h1>
-        <h2><%= foodItem.name %>, $<%= foodItem.price %>  </h2>
-        <div class="img-container"> 
+        <a href="/menu"><h1>At food bar</h1></a>
+        <div class="img-container zoom"> 
+            <div><%= foodItem.name %>, $<%= foodItem.price %></div>
             <img src="<%= foodItem.image %> " alt="<%= foodItem.name %>">
         </div>
     </body>
